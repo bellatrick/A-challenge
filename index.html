@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b2ecc8873b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Reviews hub</title>
+  </head>
+  <body>
+    <div class="box">
+
+      <ul class="productList">
+        <p>Click the list to display product details</p> 
+      <p class="loading">Loading...</p>
+      </ul>
+    <div class="container hidden">
+        
+      <div class="productItem productDetail">
+        <div class="productContainer">
+          <h2 class="productName">Click on the product List to view Details</h2>
+          <div class="ratingNumDiv">
+            <div class="starRating">
+              <span class="ratingNumber"></span>
+              <div class="ratingDiv">
+             
+              </div>
+            </div>
+            <button class="show-modal">Add review</button>
+          </div>
+        </div>
+        <hr />
+        <div class="reviews">
+          <p>Reviews</p>
+          <div class="addedReviews">
+            <span>
+              <i class=" stars rating__star far fa-star"></i
+                ><i class="stars rating__star far fa-star"></i
+                ><i class="stars rating__star far fa-star"></i
+                ><i class=" stars rating__star far fa-star"></i
+                ><i class="stars rating__star far fa-star"></i>
+            </span>
+            <span class="storedReviewNumber">4</span>
+            <span class="reviewText">-Exquisite</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ratingInput ">
+       <div class="modalContent">
+       <div class="ratingHead"> <h3>What's your rating?</h3>
+      
+      </div>
+        <p>Rating</p>
+        <span
+        ><i class=" stars rating__star far fa-star"></i
+        ><i class="stars rating__star far fa-star"></i
+        ><i class="stars rating__star far fa-star"></i
+        ><i class=" stars rating__star far fa-star"></i
+        ><i class="stars rating__star far fa-star"></i>
+      </span>
+      <p>Review</p>
+     <form class="form">
+       <div><input required class="review" type='text' placeholder="Start typing..."/></div> 
+        <button class="close-modal" type="submit">Submit Review</button>
+        <p class="error hidden">You must add at least one star</p>
+     </form> 
+       </div>
+      </div>
+    </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+  <script src="index.js" defer></script>
+</html>
